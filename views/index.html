@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Bebas+Neue&family=Bitcount+Prop+Single:wght@100..900&family=Black+Ops+One&family=Bungee&family=Changa+One:ital@0;1&family=Freeman&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Isometra&family=Momo+Trust+Display&family=Rubik+Dirt&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="../Bootstrap/biblioteca bootstrap/css/bootstrap.min.css">
+</head>
+
+<body>
+
+    <div class="row g-0" style="height: 100vh;">
+
+        <div class="col-6 overflow-hidden position-relative">
+            <img id="img1" src="" class="w-100 h-100 object-fit-cover border-end border-light border-3">
+
+            <button id="botonMenu" class="position-absolute btn top-0 start-0 m-3" type="button"
+                data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop" aria-controls="staticBackdrop">
+                <i class="fa-etch fa-solid fa-code"></i>
+            </button>
+
+            <div class="offcanvas offcanvas-start vh-30" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop"
+                aria-labelledby="staticBackdropLabel">
+                <div class="offcanvas-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <div class="row">
+                        <i class="fa-etch fa-solid fa-house fa-2xl col-12"></i>
+                        <i class="fa-etch fa-solid fa-gamepad fa-2xl col-12"></i>
+                        <i class="fa-etch fa-solid fa-trophy fa-2xl col-12"></i>
+                        <i class="fa-etch fa-solid fa-chart-simple fa-2xl col-12"></i>
+                        <i class="fa-etch fa-solid fa-user fa-2xl col-12"></i>
+                        <i class="fa-etch fa-solid fa-question fa-2xl col-12"></i>
+                        <i class="fa-etch fa-solid fa-gear fa-2xl col-12"></i>
+                        <i class="fa-etch fa-solid fa-arrow-right-from-bracket fa-2xl col-12"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div id="info1" class="position-absolute bottom-0 p-4 text-white bg-dark bg-opacity-50 w-100 text-center">
+                <h2 id="numero"></h2>
+            </div>
+        </div>
+
+        <div class="col-6 overflow-hidden position-relative">
+            <img id="img2" src="" class="w-100 h-100 object-fit-cover border-start border-light border-3">
+
+            <div id="puntoimg2" class=" position-absolute start-50 top-50 translate-middle text-white"></div>
+
+            <div id="botones" class="position-absolute bottom-0 p-4 text-white w-100 text-center bg-dark bg-opacity-50">
+                <div class="row d-flex justify-content-center">
+                    <button class="btn btn-lg col-5 m-2 fw-bold" onclick="cambiarImagen(0)" value="menor">Menor</button>
+                    <button class="btn btn-lg col-5 m-2 fw-bold" onclick="cambiarImagen(1)" value="mayor">Mayor</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- modal -->
+    <div class="modal fade" id="modalFinal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content text-bg-dark">
+                <div class="modal-header">
+                    <h5 class="modal-title">Perdiste</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <p id="record"></p>
+                    <p id="contador"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../Bootstrap/biblioteca bootstrap/js/bootstrap.min.js"></script>
+    <script src="../js/script.js"></script>
+</body>
+
+</html>

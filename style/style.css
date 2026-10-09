@@ -1,0 +1,66 @@
+img {
+  width: 49%;
+}
+
+button {
+  text-shadow: bold;
+}
+
+.card {
+  height: 100hv;
+}
+
+#botonMenu {
+  background-color: #2CB67D;
+}
+
+#staticBackdrop {
+  width: 10%;
+  background-color: #7F5AF0;
+}
+
+#staticBackdrop i {
+  margin: 2rem 0rem;
+  display: flex;
+  justify-content: center;
+}
+
+#info1 {
+  font-family: "Isometra", serif;
+  font-weight: 400;
+  font-style: normal;
+  mask-image: linear-gradient(to top, black 85%, transparent);
+  height: 7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#puntoimg2 {
+  font-family: "Isometra", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: xx-large;
+  text-align: center;
+}
+
+#puntoimg2 span {
+  color: gold;
+}
+
+.oscuro {
+  filter: brightness(25%);
+}
+
+#botones {
+  mask-image: linear-gradient(to top, black 85%, transparent);
+  height: 7rem;
+}
+
+#botones button {
+  font-family: "Isometra", serif;
+  font-weight: 400;
+  font-style: normal;
+  background-color: #7F5AF0;
+  letter-spacing: 2px;
+}
