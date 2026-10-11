@@ -64,3 +64,17 @@ button {
   background-color: #7F5AF0;
   letter-spacing: 2px;
 }
+
+#main-title{
+  padding: 3rem;
+  font-size: xx-large;
+}
+
+#main-row {
+    margin-top: 6rem;
+}
+
+#main-row div {
+  margin: 2rem;
+  padding: 2rem;
+}
